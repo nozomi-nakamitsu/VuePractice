@@ -37,7 +37,7 @@ export default defineComponent({
           scrub: 4, //スクロールバー触ってるかに合わせてアニメーションつける
           pin: ".square", //endになったら、要素が固定されて上にスクロールされる
           pinSpacing: false,
-          toggleActions: "restart none none none", // OnEnter, OnLeave,OnEnterBack, OnLeaveBack 
+          toggleActions: "restart none none none", // OnEnter, OnLeave,OnEnterBack, OnLeaveBack
           markers: false, // マーカー表示
           toggleClass: "red", // クラスの付け替え
         },
@@ -49,7 +49,7 @@ export default defineComponent({
           end: "top 50%",
           markers: true,
           scrub: 1,
-          onEnter: () => Func(),// OnEnter, OnLeave,OnEnterBack, OnLeaveBack この４つのイベント時にメソッドを呼ぶことも可能
+          onEnter: () => Func(), // OnEnter, OnLeave,OnEnterBack, OnLeaveBack この４つのイベント時にメソッドを呼ぶことも可能
         },
       });
       tl.to(".box", { x: 500, duration: 5 })
@@ -68,3 +68,6 @@ export default defineComponent({
   },
 });
 </script>
+<style scoped>
+@import "../css/style.css";
+</style>
